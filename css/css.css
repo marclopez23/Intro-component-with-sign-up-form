@@ -16,11 +16,11 @@ body{
 }
 
 main{
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 9em;
+  padding: 0 9em;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
@@ -51,6 +51,10 @@ h1{
   padding: 1.5em;
   border-radius: 10px;
   box-shadow: 0px 9px 2px 0px rgba(62, 60, 73, 0.27);
+}
+
+.destacado strong{
+  font-weight: 700;
 }
 
 .formulario{
@@ -97,4 +101,71 @@ input[type="submit"]{
 .sub-form a{
   color: hsl(0, 100%, 74%);
   font-weight: 700;
+}
+
+footer{
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2em;
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 1024px) {
+  main{
+    flex-direction: column;
+    justify-content: center;
+    height: unset;
+    padding: 10%;
+  }
+
+  .izquierda{
+    width: 60%;
+    margin-bottom: 3em;
+  }
+  .derecha{
+    width: 100%;
+  }
+
+  .izquierda{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 414px) {
+  main{
+    flex-direction: column;
+    justify-content: center;
+    height: unset;
+    padding: 25% 5%;
+  }
+
+.izquierda{
+  width:100%;
+}
+
+h1{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2em;
+}
+.destacado{
+  padding: 1.5em 4.5em;
+  line-height: 1.7em;
+
+}
+
+.formulario{
+  padding: 1.5em ;
+
+}
+
+input{
+  margin: .5em 0;
+
+}
+
+.sub-form{
+  padding: 0 3em;
+  line-height: 1.7em;
+}
+
 }

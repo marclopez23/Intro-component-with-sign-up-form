@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/css.css">
+  <link rel="stylesheet" href="/css/css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -23,12 +23,12 @@
 
         <p class="destacado"><strong>Try it free 7 days</strong> then $20/mo. thereafter<p>
           <div class="formulario">
-            <form class="" action="index.html" method="post">
-              <input type="text" name="nombre" value="First Name">
-              <input type="text" name="apellido" value="Last Name">
-              <input type="email" name="correo" value="Email Adress">
-              <input type="`password" name="contrasena" value="Password">
-              <input type="submit" name="" value="CLAIM YOUR FREE TRIAL">
+            <form id="form" name="form" action="index.html" method="get" onsubmit="isEmpty()">
+              <input type="text" name="nombre" value="First Name" onfocus="this.value=''">
+              <input type="text" name="apellido" value="Last Name" onfocus="this.value=''">
+              <input type="email" name="correo" value="Email Adress" onfocus="this.value=''">
+              <input type="password" name="contrasena" value="Password" onfocus="this.value=''">
+              <input type="submit" name="" value="CLAIM YOUR FREE TRIAL" onfocus="this.value=''">
             </form>
             <p class="sub-form">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
 
@@ -40,8 +40,9 @@
       <footer>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/marclopez23">Marc López</a>.
+          <br>Coded by <a href="https://github.com/marclopez23" target="_blank">Marc López</a>.
         </p>
       </footer>
+      <script type="text/javascript" src="js/script.js"></script>
     </body>
     </html>
