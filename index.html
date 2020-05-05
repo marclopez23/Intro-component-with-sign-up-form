@@ -24,10 +24,14 @@
         <p class="destacado"><strong>Try it free 7 days</strong> then $20/mo. thereafter<p>
           <div class="formulario">
             <form id="form" name="form" action="index.html" method="get" onsubmit="isEmpty()">
-              <input type="text" name="nombre" value="First Name" onfocus="this.value=''">
-              <input type="text" name="apellido" value="Last Name" onfocus="this.value=''">
-              <input type="email" name="correo" value="Email Adress" onfocus="this.value=''">
-              <input type="password" name="contrasena" value="Password" onfocus="this.value=''">
+              <input type="text" name="nombre" placeholder="First Name" onfocus="this.value=''">
+              <p id="er-nombre" class="error"></p>
+              <input type="text" name="apellido" placeholder="Last Name" onfocus="this.value=''">
+              <p id="er-apellido" class="error"></p>
+              <input type="email" name="correo" placeholder="Email Adress" onfocus="this.value=''">
+              <p id="er-email" class="error"></p>
+              <input type="password" name="contrasena" placeholder="Password" onfocus="this.value=''">
+              <p id="er-contra" class="error"></p>
               <input type="submit" name="" value="CLAIM YOUR FREE TRIAL" onfocus="this.value=''">
             </form>
             <p class="sub-form">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>

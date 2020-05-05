@@ -27,8 +27,12 @@ main{
 
 }
 
-.izquierda, .derecha{
-  width: 49%;
+.izquierda{
+  width: 48%;
+}
+
+.derecha{
+  width: 52%;
 
 }
 
@@ -71,7 +75,7 @@ input{
   font-size: 16px;
   box-sizing: border-box;
   width: 100%;
-  margin: 1em 0;
+  margin: 1.25em 0 0.75em 0;
   height: 4em;
   padding: 0 2em;
   color: #00000073;
@@ -101,6 +105,13 @@ input[type="submit"]{
 .sub-form a{
   color: hsl(0, 100%, 74%);
   font-weight: 700;
+}
+
+.error {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 12px;
 }
 
 footer{

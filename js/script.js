@@ -7,11 +7,12 @@ form.addEventListener('submit', handleForm);
 
 
 
-
+let correo =document.forms["form"]["correo"].value;
 function isEmail(){
-  let correo =document.forms["form"]["correo"].value;
   if(correo.match(pattern)){
     email=true;
+  } else{
+    document.getElementById("er-email").innerHTML = "Looks like this is not an email";
   }
   console.log(email);
 }
@@ -22,9 +23,22 @@ function isEmpty(){
   let contrasena =document.forms["form"]["contrasena"].value
   console.log(nombre);
   isEmail();
-  if((email) && (nombre != "" && nombre != "First Name") && (apellido != "" && apellido != "Last Name") && (contrasena != "" && contrasena != "Password") ){
-    console.log("ok");
+  if(correo.length != 0 && nombre.length != 0 && apellido.length != 0 && contrasena.length != 0){
+    alert("ok");
   }else{
-    console.log("no");
+    if(correo.length === 0){
+      document.getElementById("er-email").innerHTML = "Email cannot be empty";
+    }
+    if(nombre.length === 0){
+      document.getElementById("er-nombre").innerHTML = "First Name cannot be empty";
+    }
+    if(apellido.length === 0){
+      document.getElementById("er-apellido").innerHTML = "Last Name cannot be empty";
+    }
+    if(contrasena.length === 0){
+      document.getElementById("er-contra").innerHTML = "Password cannot be empty";
+    }
+
+
   }
 }
